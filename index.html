@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Ping Pong Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Page -->
+  <div id="startPage">
+    <h1>Ping Pong Game</h1>
+    <button id="startButton">Start Game</button>
+    <button id="pauseMusic">Pause Music</button>
+  </div>
+
+  <!-- Game Container -->
+  <div class="game-container" style="display: none;">
+    <canvas id="gameCanvas"></canvas>
+    <div class="ui">
+      <div id="score">Player 1: 0 | Player 2: 0</div>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="backgroundMusic" loop>
+    <source src="assets/sounds/background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
